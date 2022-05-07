@@ -1,0 +1,7 @@
+image: pedbap/libqrencode_fuzz:2
+duration: 50000
+project: qrencode-fuzz
+target: afl-fuzzers
+cmds:
+  - cmd: /qrencode -r @@ -o /dev/null
+    afl: true
